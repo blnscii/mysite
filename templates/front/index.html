@@ -1,0 +1,151 @@
+{% extends 'front/base.html' %}
+{% load static %}
+
+{% block content %}
+<main id="main">
+      <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'front/img/slide/slide-1.jpg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">"Resep Kari Ayam Berkuah Gurih Kental"</h2>
+              <p class="animate__animated animate__fadeInUp">Merupakan kuliner khas sumatra, kari ayam berkuah kental ini sangat cocok disantap untuk lauk nasi atau dengan roti jala atau pratha.  </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'front/img/slide/slide-2.jpg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">"Resep Kari Ayam Berkuah Gurih Kental"</h2>
+              <p class="animate__animated animate__fadeInUp">Merupakan kuliner khas sumatra, kari ayam berkuah kental ini sangat cocok disantap untuk lauk nasi atau dengan roti jala atau pratha.  </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({% static 'front/img/slide/slide-3.jpg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row center">
+          <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="true">Makanan</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-drink-tab" data-bs-toggle="pill" data-bs-target="#pills-drink" type="button" role="tab" aria-controls="pills-drink" aria-selected="false">Minuman</button>
+            </li>
+          </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/lontong-sayur.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/pecel.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/rawon.jpeg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/sate.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/pempek.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/gudeg.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/kunyit-asem.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/cendol-dawet.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/wedang-kacang-hijau-khas-indonesia.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/timun.jpg' %}"class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/lahang.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="{% static 'front/img/portfolio/sereh.jpg' %}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>          
+      </div>
+    </section>
+<!-- End Portfolio Section -->
+
+</main><!-- End #main -->
+
+{% endblock content %}

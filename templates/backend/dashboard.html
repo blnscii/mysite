@@ -1,0 +1,55 @@
+{% extends 'backend/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content">
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <div class="numbers pull-left text-center">
+                            218
+                        </div>
+                    </div>
+                </div>
+                <h6 class="big-title">Tempat Makan</h6>
+                <div id="chartTotalEarnings"></div>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="footer-title">Restoran Statistik</div>
+                <div class="pull-right">
+                    <button class="btn btn-info btn-fill btn-icon btn-sm">
+                        <i class="ti-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+                <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <div class="numbers pull-left text-center">
+                            2000
+                        </div>
+                    </div>
+                </div>
+                <h6 class="big-title">Resep</h6>
+                <div id="chartTotalEarnings"></div>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="footer-title">Resep Statistik</div>
+                <div class="pull-right">
+                    <button class="btn btn-info btn-fill btn-icon btn-sm">
+                        <i class="ti-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,59 @@
+{% extends 'front/base.html' %}
+{% load static %}
+{% block content %}
+      <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main mt-5" id="top">
+        
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+          <div class="py-0">
+            <p class="text-dark text-center fs-1"><b>Biodata</b></p>            
+          </div>
+        <div class="container shadow p-3 mb-5 bg-white">
+          <div class="row" style="width: 900px;">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="{% static 'front/img/bulan.jpg' %}" class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-text">Nama : Bulan Suci Cahayawati</h5>
+                    <h5 class="card-text">NIM  : 2011102441094</h5>
+                    <h5 class="card-text">Email : 2011102441094@umkt.ac.id</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
+
+      <div class="container bg-dark overflow-hidden rounded-1">
+        <div class="bg-holder" style="background-image:url(assets/img/promo/promo-bg.png);">
+        </div>
+        <!--/.bg-holder-->
+      </div>
+      <!-- end of .container-->
+
+    </section>
+
+{% endblock content %}
